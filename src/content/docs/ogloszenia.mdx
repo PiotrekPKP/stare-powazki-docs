@@ -3,6 +3,7 @@ title: Ogłoszenia
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { l } from "../../utils.ts";
 
 Strona internetowa pozwala na dodawanie trzech typów ogłoszeń: **ogłoszenia popup**, **ogłoszenia w formie slajdów** oraz **ogłoszenia w postaci małego baneru**.
 
@@ -12,7 +13,7 @@ Aby dodać lub edytować bazowe ogłoszenie, należy wejść w zakładkę **Anno
 
 Na stronie edycji / dodawania ogłoszenia należy uzupełnić wszystkie wymagane pola a następnie zapisać i opublikować ogłoszenie.
 
-<video src="/videos/announcements/1.mp4" controls width="100%"></video>
+<video src={l("/videos/announcements/1.mp4")} controls width="100%"></video>
 
 ## Dodawanie ogłoszenia popup
 
@@ -20,7 +21,7 @@ Jeżeli dodane mamy już ogłoszenia, które chcemy wyświetlić w popupie, moż
 
 Na końcu wybieramy witryny, na których wyświetlany będzie popup oraz ogłoszenia bazowe, które w danym popupie będą pokazywane. Na samym końcu należy zapisać i opublikować popup.
 
-<video src="/videos/announcements/2.mp4" controls width="100%"></video>
+<video src={l("/videos/announcements/2.mp4")} controls width="100%"></video>
 
 Ogłoszenie w formie popupu wyglądać będzie następująco:
 
@@ -34,7 +35,7 @@ Popup pokazywany będzie użytkownikom jednokrotnie, ze względu na witrynę. Po
 
 Dodanie ogłoszeń w formie slajdów polega jedynie na przypisaniu ogłoszenia do konkretnych witryn, a następnie podjęcie decyzji: czy ogłoszenia w formie slajdów wyświetlane mają być jedynie na stronie głównej, czy też na wszystkich podstronach danej witryny.
 
-<video src="/videos/announcements/3.mp4" controls width="100%"></video>
+<video src={l("/videos/announcements/3.mp4")} controls width="100%"></video>
 
 Ogłoszenie w formie popupu wyglądać będzie następująco:
 
