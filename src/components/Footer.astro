@@ -1,0 +1,23 @@
+---
+import { l } from "../utils";
+---
+
+<footer>
+  <a href="https://ventilabs.pl" target="_blank" rel="noopener noreferrer" aria-label="Venti Labs">
+    <img src={l("/ventilabs.svg")} alt="Venti Labs" />
+  </a>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--sl-color-hairline);
+  }
+
+  img {
+    width: 120px;
+    height: auto;
+  }
+</style>

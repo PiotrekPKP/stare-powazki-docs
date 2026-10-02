@@ -22,6 +22,9 @@ export default defineConfig({
         light: "./src/assets/logo-black.svg",
         dark: "./src/assets/logo-white.svg",
       },
+      components: {
+        Footer: "./src/components/Footer.astro",
+      },
     }),
   ],
 });

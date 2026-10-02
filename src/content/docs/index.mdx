@@ -4,33 +4,13 @@ title: Strona główna
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
 import { LinkButton } from "@astrojs/starlight/components";
+import { l } from "../../utils.ts";
 
 <CardGrid>
   <Card title="Ogłoszenia" icon="open-book">
     Dodawanie ogłoszeń w formie popupów, slajdów oraz banerów.
 
-    <LinkButton href="/ogloszenia/">Przejdź do instrukcji</LinkButton>
-
-  </Card>
-
-  <Card title="Ogłoszenia" icon="open-book">
-    Dodawanie ogłoszeń w formie popupów, slajdów oraz banerów.
-
-    <LinkButton href="/ogloszenia/">Przejdź do instrukcji</LinkButton>
-
-  </Card>
-
-  <Card title="Ogłoszenia" icon="open-book">
-    Dodawanie ogłoszeń w formie popupów, slajdów oraz banerów.
-
-    <LinkButton href="/ogloszenia/">Przejdź do instrukcji</LinkButton>
-
-  </Card>
-
-  <Card title="Ogłoszenia" icon="open-book">
-    Dodawanie ogłoszeń w formie popupów, slajdów oraz banerów.
-
-    <LinkButton href="/ogloszenia/">Przejdź do instrukcji</LinkButton>
+    <LinkButton href={l("/ogloszenia/")}>Przejdź do instrukcji</LinkButton>
 
   </Card>
 </CardGrid>
