@@ -4,6 +4,8 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://piotrekpkp.github.io",
+  base: "/stare-powazki-docs",
   integrations: [
     starlight({
       title: "Stare Powązki",
