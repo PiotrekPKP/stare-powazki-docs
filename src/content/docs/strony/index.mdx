@@ -2,6 +2,8 @@
 title: Strony
 ---
 
+import { l } from "../../../utils.ts";
+
 Zarządzanie podstronami danej witryny wiąże się z działaniami na dwóch typach encji - komponentach oraz stronach. Te pierwsze służą do prostej synchronizacji treści pomiędzy różnymi wersjami językowymi oraz do możliwie prostego umieszczania powtarzalnych elementów na wielu stronach. Drugi typ encji pozwala nam dodawać obiekt odpowiadający danej podstronie związanej z konkretnym adresem URL (lub grupą takich adresów).
 
 ## Komponenty
@@ -32,6 +34,8 @@ Bloki strony podzielone są na trzy kategorie:
 
 Po wybraniu naszego bloku, uzupełniamy wszystkie wymagane pola, a następnie zapisujemy i publikujemy komponent.
 
+<video src={l("/videos/pages/1.mp4")} controls width="100%"></video>
+
 ### Dodanie komponentu na podstronę
 
 Jeżeli dodaliśmy już komponent, czas teraz umieścić go na wybranej podstronie danej witryny. Aby to zrobić, przechodzimy do zakładki **WebPages**, a następnie wybieramy stronę, na której chcielibyśmy taki komponent umieścić.
@@ -39,6 +43,8 @@ Jeżeli dodaliśmy już komponent, czas teraz umieścić go na wybranej podstron
 Na ekranie edycji podstrony przechodzimy następnie do sekcji **Zawartość**. Sekcja ta działa na podobnej zasadzie jak sekcja **Komponent** danego komponentu. Musimy wybrać tutaj odpowiedni blok strony. W tym przypadku, interesującym nas blokiem jest blok **Component**, znajdujący się w sekcji **Shared**.
 
 Po wybraniu naszego bloku pojawi się wówczas pole **Komponent**, w którym wybieramy utworzony wcześniej komponent z listy - możemy go również wyszukać, wpisując jego nazwę. Po dodaniu komponentu przenosimy cały blok w strukturze zawartości strony na miejsce, w którym chcemy, żeby się pokazywał. Strona wyświetla swoją zawartość w tej samej kolejności, co elementy znajdujące się w sekcji **Zawartość**.
+
+<video src={l("/videos/pages/2.mp4")} controls width="100%"></video>
 
 ## Podstrony
 
