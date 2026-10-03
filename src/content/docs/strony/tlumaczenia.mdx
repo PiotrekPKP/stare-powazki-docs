@@ -2,4 +2,32 @@
 title: Tłumaczenie stron
 ---
 
-Abc
+import LLMTranslateNote from "../../../components/LLMTranslateNote.astro";
+
+Tłumaczenie stron polega na zarządzaniu tłumaczeniami dla dwóch związanych z nimi grup - komponentów oraz stron.
+
+## Tłumaczenie komponentów
+
+Aby komponent mógł być wyświetlony we wszystkich wersjach językowych, należy dodać jego encję powiązaną z tymi językami. Domyślnie tworzona jest zawsze wersja w języku polskim.
+
+Aby dodać tłumaczenie komponentu, należy wejść w panel edycji tego komponentu. Następnie, należy skorzystać z pola wyboru języka w prawym górnym rogu. Wybieramy tam język angielski, czyli opcję **Create English (en) locale**. Po wybraniu tej opcji, otworzony zostanie panel edycji naszego komponentu w wersji w języku angielskim. Należy wówczas skopiować ustawienia bloga z języka polskiego korzystając z ikony globusa, a następnie wybierając język polski jako język źródłowy i klikając przycisk **Yes, fill in**.
+
+Po wykonaniu powyższych kroków należy teraz przetłumaczyć wszystkie pola, których wartość zostanie zmieniona. Po przetłumaczeniu naszego komponentu zapisujemy i publikujemy jego nowe ustawienia dla wybranej wersji językowej.
+
+<LLMTranslateNote />
+
+:::note
+W systemie zaimplementowana jest autoamtyczna synchronizacja wersji językowych komponentów. Oznacza to, że gdy w jednej wersji językowej zmienimy pole **nietekstowe**, np. zdjęcie, relację, czy też wartość prawda/fałsz, system automatycznie przeniesie naszą zmianę na pozostałe wersje językowe. W ten sposób zmieniając ustawienia danego komponentu na stronie, takie jak jego zdjęcie w tle czy sposób wyświetlania, nie musimy martwić się o powtarzanie tych czynności dla każdej wersji językowej.
+:::
+
+## Tłumaczenie podstron
+
+Aby strona mogła być wyświetlona we wszystkich wersjach językowych, należy dodać jej encję powiązaną z tymi językami. Domyślnie tworzona jest zawsze wersja w języku polskim.
+
+Aby dodać tłumaczenie strony, należy wejść w panel edycji tej strony. Następnie, należy skorzystać z pola wyboru języka w prawym górnym rogu. Wybieramy tam język angielski, czyli opcję **Create English (en) locale**. Po wybraniu tej opcji, otworzony zostanie panel edycji naszej strony w wersji w języku angielskim. Należy wówczas skopiować ustawienia strony z języka polskiego korzystając z ikony globusa, a następnie wybierając język polski jako język źródłowy i klikając przycisk **Yes, fill in**.
+
+Po wykonaniu powyższych kroków należy teraz przetłumaczyć wszystkie pola, których wartość zostanie zmieniona - w tym przypadku będą to pola **Nazwa strony** oraz ewentualne pola związane z SEO strony, czyli **Tytuł strony** oraz **Opis strony**. Po przetłumaczeniu naszej podstrony zapisujemy i publikujemy jej nowe ustawienia dla wybranej wersji językowej.
+
+:::caution
+Nie należy tłumaczyć pola **Slug** względem wersji w języku domyślnym (polskim). Przetłumaczenie tego pola nie spowoduje problemów w działaniu strony, natomiast linki podstron w różnych językach nie będą zgodne. Wówczas zmiana języka znajdując się na danej podstronie witryny spowoduje przeniesienie użytkownika pod nieistniejący link i wyświetlenie strony **404**. Z tego też powodu wszystkie pola **Slug** danej podstrony powinny pozostać identyczne.
+:::
