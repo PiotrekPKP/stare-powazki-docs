@@ -3,7 +3,7 @@ title: Ogłoszenia
 ---
 
 import { Tabs, TabItem } from "@astrojs/starlight/components";
-import { l } from "../../utils.ts";
+import { l } from "../../../utils.ts";
 
 Strona internetowa pozwala na dodawanie trzech typów ogłoszeń: **ogłoszenia popup**, **ogłoszenia w formie slajdów** oraz **ogłoszenia w postaci małego baneru**.
 
@@ -25,7 +25,7 @@ Na końcu wybieramy witryny, na których wyświetlany będzie popup oraz ogłosz
 
 Ogłoszenie w formie popupu wyglądać będzie następująco:
 
-![](../../assets/announcements/2.png)
+![](../../../assets/announcements/2.png)
 
 :::note
 Popup pokazywany będzie użytkownikom jednokrotnie, ze względu na witrynę. Po zakmnięciu popupu przez użytkownika, nie zostanie on już wyświetlony przy ponownym odwiedzeniu witryny. Jeżeli jednak zostanie on zaktualizowany w systemie (np. zmieniony zostanie tytuł ogłoszenia), popup pokazany zostanie wszystkim użytkownikom na nowo.
@@ -40,9 +40,11 @@ Dodanie ogłoszeń w formie slajdów polega jedynie na przypisaniu ogłoszenia d
 Ogłoszenie w formie popupu wyglądać będzie następująco:
 
 <Tabs>
-  <TabItem label="Strona główna">![](../../assets/announcements/3.png)</TabItem>
+  <TabItem label="Strona główna">
+    ![](../../../assets/announcements/3.png)
+  </TabItem>
   <TabItem label="Pozostałe strony">
-    ![](../../assets/announcements/4.png)
+    ![](../../../assets/announcements/4.png)
   </TabItem>
 </Tabs>
 
@@ -50,10 +52,10 @@ Ogłoszenie w formie popupu wyglądać będzie następująco:
 
 Dodawanie ogłoszenia w postaci małego baneru polega na przypisaniu utworzonego ogłoszenia bazowego do pola **Małe ogłoszenie** w ustawieniach danej witryny. Wystarczy wejść w zakładkę **Site**, wybrać witrynę, na której wyświetlane będzie dane ogłoszenie, a następnie przypisać to ogłoszenie w odpowiednim polu:
 
-![](../../assets/announcements/5.png)
+![](../../../assets/announcements/5.png)
 
 Na końcu należy zapisać i opublikować ustawienia witryny.
 
 Ogłoszenie w postaci małego baneru wyglądać będzie następująco:
 
-![](../../assets/announcements/6.png)
+![](../../../assets/announcements/6.png)

@@ -1,6 +1,8 @@
 ---
-title: Tłumaczenie blogów i wpisów na bloga
+title: Tłumaczenie blogów
 ---
+
+import LLMTranslateNote from "../../../components/LLMTranslateNote.astro";
 
 Tłumaczenie blogów polega na zarządzaniu tłumaczeniami dla wszystkich trzech grup związanych z blogami - blogów nadrzędnych, tagów wpisów oraz samych wpisów na bloga.
 
@@ -26,10 +28,10 @@ Aby wpisy na bloga mogły być wyświetlone we wszystkich wersjach językowych, 
 
 Aby dodać tłumaczenie wpisu na bloga, należy wejść w panel edycji tego wpisu. Następnie, należy skorzystać z pola wyboru języka w prawym górnym rogu. Wybieramy tam język angielski, czyli opcję **Create English (en) locale**. Po wybraniu tej opcji, otworzony zostanie panel edycji naszego wpisu w wersji w języku angielskim. Należy wówczas skopiować ustawienia wpisu z języka polskiego korzystając z ikony globusa, a następnie wybierając język polski jako język źródłowy i klikając przycisk **Yes, fill in**.
 
-Po wykonaniu powyższych kroków należy teraz przetłumaczyć wszystkie pola, których wartość zostanie zmieniona - w tym przypadku będą to pola **Tytuł**, **Streszczenie** oraz **Treść**. Po przetłumaczeniu nazwy naszego wpisu na bloga zapisujemy i publikujemy nowe ustawienia wpisu dla wybranej wersji językowej.
+Po wykonaniu powyższych kroków należy teraz przetłumaczyć wszystkie pola, których wartość zostanie zmieniona - w tym przypadku będą to pola **Tytuł**, **Streszczenie** oraz **Treść**. Po przetłumaczeniu naszego wpisu na bloga zapisujemy i publikujemy nowe ustawienia wpisu dla wybranej wersji językowej.
 
 :::caution
 Nie należy tłumaczyć pola **Slug** względem wersji w języku domyślnym (polskim). Przetłumaczenie tego pola nie spowoduje problemów w działaniu strony, natomiast linki wpisów w różnych językach nie będą zgodne. Wówczas zmiana języka znajdując się na stronie danego wpisu spowoduje przeniesienie użytkownika pod nieistniejący link i wyświetlenie strony **404**. Z tego też powodu wszystkie pola **Slug** danego wpisu powinny pozostać identyczne, najlepiej wygenerowane na bazie tytułu w języku polskim.
 :::
 
-Aby w szybki sposób przetłumaczyć wpis na bloga, możemy skorzystać z rozszerzenia tłumaczącego wpisy z wykorzystaniem modeli językowych AI. Wówczas po skopiowaniu wpisu z polskiej wersji językowej do języka angielskiego, możemy skorzystać z przycisku **Translate with AI** znajdującego się po prawej stronie ekranu, pod przyciskami **Opublikuj** i **Zapisz**. Po kliknięciu przycisku należy odczekać, aż strona nie pokaże komunikatu o pomyślnym tłumaczeniu, a pola nie będą zawierać przetłumaczonej treści. Jeżeli tłumaczenie się zakończy i zobaczymy oczekiwany rezultat, możemy w razie potrzeby poprawić tłumaczenia a następnie zapisać i opublikować dany wpis.
+<LLMTranslateNote />

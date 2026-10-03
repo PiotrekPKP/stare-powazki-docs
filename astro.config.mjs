@@ -33,8 +33,12 @@ export default defineConfig({
           items: [{ autogenerate: { directory: "blog" } }],
         },
         {
-          label: "Ogłoszenia",
-          link: "/ogloszenia/",
+          label: "Zarządzanie ogłoszeniami",
+          items: [{ autogenerate: { directory: "ogloszenia" } }],
+        },
+        {
+          label: "Zarządzanie podstronami",
+          items: [{ autogenerate: { directory: "strony" } }],
         },
       ],
     }),
