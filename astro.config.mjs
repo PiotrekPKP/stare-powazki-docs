@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { l } from "./src/utils";
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,6 +26,17 @@ export default defineConfig({
       components: {
         Footer: "./src/components/Footer.astro",
       },
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
+      sidebar: [
+        {
+          label: "Zarządzanie blogami",
+          items: [{ autogenerate: { directory: "blog" } }],
+        },
+        {
+          label: "Ogłoszenia",
+          link: "/ogloszenia/",
+        },
+      ],
     }),
   ],
 });
