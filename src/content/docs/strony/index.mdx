@@ -39,3 +39,54 @@ Jeżeli dodaliśmy już komponent, czas teraz umieścić go na wybranej podstron
 Na ekranie edycji podstrony przechodzimy następnie do sekcji **Zawartość**. Sekcja ta działa na podobnej zasadzie jak sekcja **Komponent** danego komponentu. Musimy wybrać tutaj odpowiedni blok strony. W tym przypadku, interesującym nas blokiem jest blok **Component**, znajdujący się w sekcji **Shared**.
 
 Po wybraniu naszego bloku pojawi się wówczas pole **Komponent**, w którym wybieramy utworzony wcześniej komponent z listy - możemy go również wyszukać, wpisując jego nazwę. Po dodaniu komponentu przenosimy cały blok w strukturze zawartości strony na miejsce, w którym chcemy, żeby się pokazywał. Strona wyświetla swoją zawartość w tej samej kolejności, co elementy znajdujące się w sekcji **Zawartość**.
+
+## Podstrony
+
+Elementami, które odpowiadają konkretnym stronom pod danymi adresami URL są encje kolekcji **WebPages**. To w nich ustalamy adresy stron pod którymi się znajdują, a także ewentualne typy danych którym odpowiadają.
+
+Aby dodać nową podstronę, należy udać się do zakładki **WebPages**, a następnie kliknąć przycisk **Create new entry**. Wyświetlony zostanie wówczas formularz tworzenia nowej podstrony.
+
+Uzupełniamy teraz w formularzu wymagane pola.
+
+1. Pole **Nazwa strony**
+
+   Pole **Nazwa strony** wyświetlane będzie w tytule zakładki w przeglądarce, w linku w wyszukiwarce oraz w elemencie _Breadcrumb_, czyli liście hierarchii stron w nagłówku strony.
+
+2. Pole **Slug**
+
+   Pole **Slug**, to pole na bazie którego tworzony jest adres URL strony. Odpowiada on dokładnie adresowi, pod którym strona się znajdzie - jeżeli pole **Slug** zwierać będzie wartość `/aktualnosci`, nasza strona znajdzie się właśnie pod adresem `/aktualnosci`.
+
+3. Pole **Witryna**
+
+   Pole **Witryna** oznacza witrynę, do której należy dana podstrona. Jeżeli wybierzemy witrynę _Fundacja_, a pole **Slug**, to `/slug`, to nasza strona znajdzie się pod adresem [fundacja.stare-powazki.pl/slug](https://fundacja.stare-powazki.pl/slug)
+
+4. Pole **Strona nadrzędna**
+
+   Pole służące czysto do budowania hierarchii stron w elementach _Breadcrumbs_. Jeżeli strona _Strona główna_ zostanie wybrana jako wartość pola **Strona nadrzędna**, to w nagłówku strony wyświetli się hierarchia `Strona główna > Nazwa strony`.
+
+5. Pole **Typ danych**
+
+   Pole, dzięki któremu dana strona może stać się stroną główną danego bloga, biblioteki, czy też listy lekcji na wycieczki. Jej adres staje się adresem domowym dla danego typu danych, a poszczególne encje typów danych trafiają pod adresy z dobudowanymi _Slug_-ami konkretnych elementów. Przykładowo, jeżeli nasza strona ma **Slug** z wartością `/aktualnosci`, a jej typem danych jest `blog` z wybranym blogiem nadrzędnym _Aktualności cmentarza_, to pod adresem `/aktualnosci/slug-wpisu` znajdzie się wpis z bloga _Aktualności cmentarza_, z ustalonym slugiem `slug-wpisu`. Dostępne typy danych, to:
+   1. **blog**
+
+      Podłącza stronę do konkretnego bloga nadrzędnego. Po wybraniu tego typu danych, pojawia się pole **Blog**, w którym musimy wybrać, który blog nadrzędny reprezentuje dana strona.
+
+   2. **monuments**
+
+      Podłącza stronę do listy pomników.
+
+   3. **symbols**
+
+      Podłącza stronę do listy symboli.
+
+   4. **appointmentTopics**
+
+      Podłącza stronę do listy lekcji na wycieczki.
+
+6. Sekcja **Zawartość**
+
+   Pole zawierające całą zawartość naszej podstrony. Wybieramy i uzupełniamy tutaj bloki strony, które będą wyświetlane na danej podstronie. Podstrona wyświetla bloki dokładnie w kolejności zadanej w tym polu.
+
+   :::caution
+   W typie **WebPages** zalecamy korzystanie jedynie z bloku **Shared / Component**.
+   :::
