@@ -6,7 +6,7 @@ import { l } from "./src/utils";
 // https://astro.build/config
 export default defineConfig({
   site: "https://piotrekpkp.github.io",
-  base: "/stare-powazki-docs",
+  base: l(""),
   integrations: [
     starlight({
       title: "Stare Powązki",
